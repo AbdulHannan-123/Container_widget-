@@ -34,6 +34,17 @@ class ContainerWidgetDD extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Container_Widget_Practice"),
+        ),
+        body: Center(
+          child: Container(
+            color: Colors.red,
+          ),
+        ),
+      ),
+    );
   }
 }
