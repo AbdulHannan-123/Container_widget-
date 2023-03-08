@@ -33,7 +33,7 @@ class ContainerWidgetDD extends StatelessWidget {
   const ContainerWidgetDD({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -41,7 +41,22 @@ class ContainerWidgetDD extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            color: Colors.red,
+
+            // padding: EdgeInsets.all(10),    // the spacing you want to give inside the container
+
+            color: Colors.red,    // the colour of your container
+
+            width: 100,         // discribe the width of the container
+
+            height: 100,        // discribe the height of the container
+
+            // constraints: const BoxConstraints(    // the limited expandable container
+            //   maxHeight: 100,                   // how maximum the conatiner can expand from height
+            //   maxWidth: 100,                    // how maximum the conatiner can expand from widht
+            //   minHeight: 50,                    // how minimum the conatiner can height is
+            //   minWidth: 50,                     // how minimum the container can width  is
+            // ),
+
           ),
         ),
       ),
