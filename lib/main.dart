@@ -58,8 +58,15 @@ class ContainerWidgetDD extends StatelessWidget {
             // ),
 
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10), // <= Error here
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                  color: Colors.red,
+                  style: BorderStyle.solid,
+                  width: 1
+                )
               ),
+
+
 
             
 
