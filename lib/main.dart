@@ -60,10 +60,12 @@ class ContainerWidgetDD extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(
-                  color: Colors.red,
-                  style: BorderStyle.solid,
-                  width: 1
-                )
+                  color: Colors.red, // color of the border
+                  style: BorderStyle.solid,  // style of border line
+                  width: 1    // how thick the border line has to be
+                ),
+                color: Colors.brown,
+                gradient: LinearGradient(colors: colors)   // for the changing of the color of whole container
               ),
 
 
